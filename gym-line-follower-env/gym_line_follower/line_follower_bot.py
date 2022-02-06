@@ -215,11 +215,11 @@ class LineFollowerBot:
                                              controlMode=self.pb_client.TORQUE_CONTROL,
                                              force=r_torque)
         self.pb_client.setJointMotorControl2(self.bot,
-                                             jointIndex=JOINT_INDICES["front_left_wheel"],
+                                             jointIndex=JOINT_INDICES["rear_left_wheel"],
                                              controlMode=self.pb_client.TORQUE_CONTROL,
                                              force=l_torque)
         self.pb_client.setJointMotorControl2(self.bot,
-                                             jointIndex=JOINT_INDICES["front_right_wheel"],
+                                             jointIndex=JOINT_INDICES["rear_right_wheel"],
                                              controlMode=self.pb_client.TORQUE_CONTROL,
                                              force=r_torque)
 
