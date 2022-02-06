@@ -149,6 +149,7 @@ class Track:
         self.pts = interpolate_points(np.array(pts), n)  # interpolate points to get the right spacing
         self.x = self.pts[:, 0]
         self.y = self.pts[:, 1]
+        self.path=None
 
         self.render_params = render_params
 
@@ -201,7 +202,7 @@ class Track:
         unit_scale = 1000
         x, y = x / unit_scale, y / unit_scale
         pts = np.stack((x, y), axis=-1)
-
+        print(pts)
         # Check width / height:
         if max(abs(min(x)), max(x)) * 2 > 1.5 * approx_width or max(abs(min(y)), max(y)) * 2 > 1.5 * approx_width * hw_ratio:
             return cls.generate(approx_width, hw_ratio, seed, irregularity, spikeyness, num_verts, *args, **kwargs)

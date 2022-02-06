@@ -178,7 +178,7 @@ class LineFollowerEnv(gym.Env):
             obsv = self.follower_bot.step(self.track)
             if self.obsv_type == "latch_bool":
                 obsv = [obsv, 1.]
-            return obsv
+            return obsv,self.track.pts
 
     def step(self, action):
         action = self.speed_limit * np.array(action)

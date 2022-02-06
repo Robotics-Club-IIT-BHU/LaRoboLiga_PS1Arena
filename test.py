@@ -7,7 +7,8 @@ import pybullet_data
 
 if __name__=="__main__":
     env = gym.make("LineFollower-v0")
-    env.reset()
+    _,path=env.reset()
+    print(path)
     while True:
         # action= select random action from your action space
-        env.step([0.1,0.1])
+        env.step([1,-1])
