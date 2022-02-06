@@ -2,6 +2,8 @@ import numpy
 import gym_line_follower
 import gym
 import time
+import pybullet as p 
+import pybullet_data
 
 if __name__=="__main__":
     env = gym.make("LineFollower-v0")
