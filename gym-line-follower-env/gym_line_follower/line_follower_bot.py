@@ -41,7 +41,7 @@ class LineFollowerBot:
         """
         self.local_dir = os.path.dirname(__file__)
         self.config = config
-
+        self.maxForce=100
         self.pb_client: p = pb_client
         self.bot = None
 
@@ -240,15 +240,35 @@ class LineFollowerBot:
         :param action:
         :return: None
         """
-        l_volts, r_volts = self._power_to_volts(*action)
-        fl_vel, fr_vel, rl_vel, rr_vel = self._get_wheel_velocity()
-        fl_vel *= MOTOR_DIRECTIONS["left"]
-        fr_vel *= MOTOR_DIRECTIONS["right"]
-        rl_vel *= MOTOR_DIRECTIONS["left"]
-        rr_vel *= MOTOR_DIRECTIONS["right"]
-        l_torque = self.left_motor.get_torque(l_volts, fl_vel)
-        r_torque = self.right_motor.get_torque(r_volts, fr_vel)
-        self._set_wheel_torque(l_torque, r_torque)
+
+        p.setJointMotorControl2(
+            self.bot, 
+            JOINT_INDICES["front_left_wheel"], 
+            self.pb_client.VELOCITY_CONTROL, 
+            targetVelocity =action[0]*100,
+            force = self.maxForce
+            )
+        p.setJointMotorControl2(
+            self.bot, 
+            JOINT_INDICES["rear_left_wheel"], 
+            self.pb_client.VELOCITY_CONTROL, 
+            targetVelocity =action[0]*100,
+            force = self.maxForce
+            )
+        p.setJointMotorControl2(
+            self.bot, 
+            JOINT_INDICES["front_right_wheel"], 
+            self.pb_client.VELOCITY_CONTROL, 
+            targetVelocity =action[1]*100,
+            force = self.maxForce
+            )
+        p.setJointMotorControl2(
+            self.bot, 
+            JOINT_INDICES["rear_right_wheel"], 
+            self.pb_client.VELOCITY_CONTROL, 
+            targetVelocity =action[1]*100,
+            force = self.maxForce
+            )
 
     def get_pov_image(self):
         """
