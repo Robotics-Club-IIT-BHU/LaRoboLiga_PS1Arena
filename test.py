@@ -1,14 +1,6 @@
-import numpy 
-import gym_line_follower
-import gym
-import time
-import pybullet as p 
-import pybullet_data
+from gym_line_follower.helper import LaRoboLigaEnv
 
 if __name__=="__main__":
-    env = gym.make("LineFollower-v0")
-    _,path=env.reset()
-    print(path)
+    Ps1Bot=LaRoboLigaEnv()
     while True:
-        # action= select random action from your action space
-        env.step([0.1,0.1])
+        Ps1Bot.set_velocity([0.1,0.1])
