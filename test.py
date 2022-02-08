@@ -1,6 +1,7 @@
 from gym_line_follower.helper import LaRoboLigaEnv
-
+import math
 if __name__=="__main__":
-    Ps1Bot=LaRoboLigaEnv()
+    husky=LaRoboLigaEnv()
+    velocity = 0.1 #Velocity
     while True:
-        Ps1Bot.set_velocity([0.1,0.1])
+        husky.set_velocity([v,v])
