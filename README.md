@@ -8,8 +8,8 @@
 ### You can learn its installation from <a href="https://www.youtube.com/watch?v=YrbAudk7ipE">here</a>.
 
 <p align="center">
-  <img width="450px" src="https://user-images.githubusercontent.com/78701055/153026015-d8e9826f-978f-485e-ad0a-4101464d1a84.png" alt="Loading arena">
-  <img width="500px" src="https://raw.githubusercontent.com/nplan/gym-line-follower/master/media/sim_env.gif" alt="Loading arena">
+  <img width="45%" src="https://user-images.githubusercontent.com/78701055/153026015-d8e9826f-978f-485e-ad0a-4101464d1a84.png" alt="Loading arena">
+  <img width="50%" src="https://raw.githubusercontent.com/nplan/gym-line-follower/master/media/sim_env.gif" alt="Loading arena">
 </p>
 <hr>
 
