@@ -9,7 +9,7 @@ This repo holds the first problem statement of event and its arena. The Arena is
 You can learn its installation from <a href="https://www.youtube.com/watch?v=YrbAudk7ipE">here</a>.
 
 <p align="center">
-  <img width="49.612%" src="https://i.imgur.com/ZRJN3gu.gif" alt="Loading arena">
+  <img width="49.61%" src="https://i.imgur.com/ZRJN3gu.gif" alt="Loading arena">
   <img width="50%" src="https://raw.githubusercontent.com/nplan/gym-line-follower/master/media/sim_env.gif" alt="Loading arena">
 </p>
 <hr>
