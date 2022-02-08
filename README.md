@@ -13,5 +13,27 @@
 </p>
 <hr>
 
-## Installation:
+<h1 align="left">Installation:</h1>
+We recommend you to go through the pybullet and OpenCV installation video before moving forward to setup the project. 
 
+### STEP 1: Clone  repository using this command:
+```bash
+git clone https://github.com/Robotics-Club-IIT-BHU/FreshersEvent_PS1Arena.git
+```
+
+
+### STEP 2: Change your current directory to the repo's root.
+```bash
+cd FreshersEvent_PS1Arena
+```
+
+
+### STEP 3: Install environment using commad.
+```bash
+pip install -e gym_line_follower
+```
+
+#### Test your setup by running test.py file.
+<hr>
+
+<h1 align="left">Using the arena:</h1>
