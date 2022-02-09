@@ -6,11 +6,13 @@ La Robo Liga is a Robot-Control and Image-Processing based Robotics Competition 
 
 This repo holds the first problem statement of event and its arena. The Arena is in the form of an OpenAI gym and runs on python libraries like `Pybullet` and `OpenCV`.
 
-You can learn its installation from <a href="https://www.youtube.com/watch?v=YrbAudk7ipE">here</a>.
+You can learn its installation from <a href="https://www.youtube.com/watch?v=YrbAudk7ipE">here</a>
+
 
 <p align="center">
+  
+  <img width="45%" src="https://user-images.githubusercontent.com/78701055/153232739-e7645871-6fae-4fdb-8b83-d01b6f3c070f.png" alt="Loading arena">
   <img width="49.5%" src="https://i.imgur.com/ZRJN3gu.gif" alt="Loading arena">
-  <img width="49.5%" src="https://raw.githubusercontent.com/nplan/gym-line-follower/master/media/sim_env.gif" alt="Loading arena">
 </p>
 <hr>
 
@@ -66,7 +68,9 @@ The goal of this round is to make the robot car follow the line given in the are
 
 ## Sample Use of Arena
 
-   ![](https://i.imgur.com/yLoWS3F.gif)
+ <p align="center">
+  <img width="100%" src="https://i.imgur.com/yLoWS3F.gif" alt="Loading arena">
+</p>
 
 Note: this Arena is only for reference. The track is randomized and changes every time `husky.reset()` is run. 
 
