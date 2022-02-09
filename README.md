@@ -10,11 +10,13 @@ You can learn its installation from <a href="https://www.youtube.com/watch?v=Yrb
 
 <p align="center">
   <img width="49.5%" src="https://i.imgur.com/ZRJN3gu.gif" alt="Loading arena">
-  <img width="50%" src="https://raw.githubusercontent.com/nplan/gym-line-follower/master/media/sim_env.gif" alt="Loading arena">
+  <img width="49.5%" src="https://raw.githubusercontent.com/nplan/gym-line-follower/master/media/sim_env.gif" alt="Loading arena">
 </p>
 <hr>
-# Installation
 
+
+
+## Installation
 
 We recommend you to go through the pybullet and OpenCV installation video before moving forward to setup the project. 
 
@@ -38,11 +40,11 @@ pip install -e gym_line_follower
 #### Test your setup by running test.py file.
 <hr>
 
-# Objective
+## Objective
 
 The goal of this round is to make the robot car follow the line given in the arena by controlling the motors of the robot car. The movement of the robot has to be entirely autonomous. If the car comes back to its initial position after completing one lap of the track, the objective of the PS will be achieved. You may refer to this [workshop](https://youtu.be/RkHvUSGgw6Q) for insights into robot controls. 
 
-# Using the Arena
+## Using the Arena
 
 1. Run the test.py file. If you see the bot moving with forward velocity, Voila! Your installation is complete.
 
@@ -59,5 +61,17 @@ The goal of this round is to make the robot car follow the line given in the are
    - `husky.getposition()`
      This function will return the x & y coordinates and the yaw angle of the robot. 
 
-   You may look into the file to explore the working of these function and to add or remove functions of your own. 
+   You may look into the file to explore the working of these function and to add or remove functions of your own.
+   
 
+## Sample Use of Arena
+
+   ![](https://i.imgur.com/yLoWS3F.gif)
+
+Note: this Arena is only for reference. The track is randomized and changes every time `husky.reset()` is run. 
+
+## Made and maintained by 
+
+|<img src="https://avatars.githubusercontent.com/u/77875542?v=4" alt="drawing" width="150"/> | <img src="https://avatars.githubusercontent.com/u/96468536?v=4" alt="drawing" width="150"/> | 
+|--|--|
+|[Ankur Agarwal](https://github.com/Ankur-Agrawal-ece20) |[Pratik Mishra](https://github.com/DolceParadise) |
