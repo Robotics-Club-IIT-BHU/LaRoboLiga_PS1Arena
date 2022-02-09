@@ -72,6 +72,6 @@ Note: this Arena is only for reference. The track is randomized and changes ever
 
 ## Made and maintained by 
 
-|<img src="https://avatars.githubusercontent.com/u/77875542?v=4" alt="drawing" width="150"/> | <img src="https://avatars.githubusercontent.com/u/96468536?v=4" alt="drawing" width="150"/> | 
+|<img src="https://avatars.githubusercontent.com/u/78701055?v=4" alt="drawing" width="150"/> | <img src="https://avatars.githubusercontent.com/u/74451989?v=4" alt="drawing" width="150"/> | 
 |--|--|
 |[Ankur Agarwal](https://github.com/Ankur-Agrawal-ece20) |[Pratik Mishra](https://github.com/DolceParadise) |
