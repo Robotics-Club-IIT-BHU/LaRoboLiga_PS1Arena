@@ -1,4 +1,4 @@
-import os
+fimport os
 import json
 import warnings
 from time import time, sleep
@@ -229,21 +229,21 @@ class LineFollowerEnv(gym.Env):
         # Time penalty
         reward -= 0.2
 
-        done = False
-        if self.track.done:
-            done = True
-            print("TRACK DONE")
-        elif abs(self.position_on_track - self.track.progress) > 0.5:
-            reward = -100
-            done = True
-            print("PROGRESS DISTANCE LIMIT")
-        elif track_err > self.max_track_err:
-            reward = -100.
-            done = True
-            print("TRACK DISTANCE LIMIT")
-        elif self.step_counter > self.max_steps:
-            done = True
-            print("TIME LIMIT")
+#         done = False
+#         if self.track.done:
+#             done = True
+#             print("TRACK DONE")
+#         elif abs(self.position_on_track - self.track.progress) > 0.5:
+#             reward = -100
+#             done = True
+#             print("PROGRESS DISTANCE LIMIT")
+#         elif track_err > self.max_track_err:
+#             reward = -100.
+#             done = True
+#             print("TRACK DISTANCE LIMIT")
+#         elif self.step_counter > self.max_steps:
+#             done = True
+#             print("TIME LIMIT")
 
         info = self._get_info()
         self.step_counter += 1
