@@ -30,16 +30,18 @@ git clone https://github.com/Robotics-Club-IIT-BHU/FreshersEvent_PS1Arena.git
 
 ### STEP 2: Change your current directory to the repo's root.
 ```bash
-cd LaRoboLiga_PS1Arena
+cd LaRoboLiga_PS1Arena/gym-line-follower-env/
 ```
 
 
-### STEP 3: Install environment using commad.
+### STEP 3: Install environment using command.
 ```bash
-pip install -e gym_line_follower
+pip install -e .
 ```
 
-#### Test your setup by running test.py file.
+
+#### Test your setup by running solution.py file.
+#### There is also a description.py file, running which will introduce you to the env functions, arguments they need and their return types.
 <hr>
 
 ## Objective

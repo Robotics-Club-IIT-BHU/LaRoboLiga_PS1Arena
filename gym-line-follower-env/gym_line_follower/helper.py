@@ -7,8 +7,9 @@ import pybullet_data
 
 
 class LaRoboLigaEnv(gym.Env):
-    def __init__(self):
-
+    def __init__(self,descr_mode=False):
+        if descr_mode:
+            return
         self.env = gym.make("LineFollower-v0")
         _, self.path = self.env.reset()
 

@@ -2,7 +2,9 @@ from gym_line_follower.helper import LaRoboLigaEnv
 import time
 
 if __name__ == "__main__":
-    husky = LaRoboLigaEnv()
+    husky = LaRoboLigaEnv(descr_mode=True)
+    print("\nPrinting the description of the environment")
+    print("**********************************************\n")
 
     print("get_full_path function--")
     print(husky.get_full_path.__doc__)
