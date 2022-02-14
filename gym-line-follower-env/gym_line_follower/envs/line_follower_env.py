@@ -1,4 +1,4 @@
-fimport os
+import os
 import json
 import warnings
 from time import time, sleep
@@ -137,6 +137,7 @@ class LineFollowerEnv(gym.Env):
         self.seed()
 
     def reset(self):
+        self.start_time=0
         self.step_counter = 0
         self.config.randomize()
 
@@ -229,10 +230,10 @@ class LineFollowerEnv(gym.Env):
         # Time penalty
         reward -= 0.2
 
-#         done = False
-#         if self.track.done:
-#             done = True
-#             print("TRACK DONE")
+        done = False
+        if self.track.done:
+            done = True
+            print("TRACK DONE")
 #         elif abs(self.position_on_track - self.track.progress) > 0.5:
 #             reward = -100
 #             done = True
