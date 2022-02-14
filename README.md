@@ -28,7 +28,7 @@ git clone https://github.com/Robotics-Club-IIT-BHU/FreshersEvent_PS1Arena.git
 ```
 
 
-### STEP 2: Change your current directory to the repo's root.
+### STEP 2: Change your current directory to the env's root.
 ```bash
 cd LaRoboLiga_PS1Arena/gym-line-follower-env/
 ```
