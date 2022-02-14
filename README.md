@@ -24,7 +24,7 @@ We recommend you to go through the pybullet and OpenCV installation video before
 
 ### STEP 1: Clone  repository using this command:
 ```bash
-git clone https://github.com/Robotics-Club-IIT-BHU/FreshersEvent_PS1Arena.git
+git clone https://github.com/Robotics-Club-IIT-BHU/LaRoboLiga_PS1Arena.git
 ```
 
 
