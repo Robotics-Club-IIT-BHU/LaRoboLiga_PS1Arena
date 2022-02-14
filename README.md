@@ -30,7 +30,7 @@ git clone https://github.com/Robotics-Club-IIT-BHU/FreshersEvent_PS1Arena.git
 
 ### STEP 2: Change your current directory to the repo's root.
 ```bash
-cd FreshersEvent_PS1Arena
+cd LaRoboLiga_PS1Arena
 ```
 
 

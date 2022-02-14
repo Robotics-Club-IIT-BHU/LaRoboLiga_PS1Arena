@@ -172,7 +172,7 @@ class Track:
         self.done = False
 
     @classmethod
-    def generate(cls, approx_width=1., hw_ratio=0.5, seed=None, irregularity=0.2,
+    def generate(cls, approx_width=1., hw_ratio=0.5, seed=None, irregularity=0.1,
                  spikeyness=0.2, num_verts=10, *args, **kwargs):
         """
         Generate random track.
