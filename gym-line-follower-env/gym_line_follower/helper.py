@@ -75,5 +75,6 @@ class LaRoboLigaEnv(gym.Env):
                 pos['yaw'] = yaw of the husky
 
         """
+        self.observation, self.reward, self.done, self.info = self.env.step([0,0])
         position = self.info
         return position
