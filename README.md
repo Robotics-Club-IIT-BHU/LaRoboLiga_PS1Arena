@@ -50,9 +50,9 @@ The goal of this round is to make the robot car follow the line given in the are
 
 ## Using the Arena
 
-1. Run the test.py file. If you see the bot moving with forward velocity, Voila! Your installation is complete.
+1. Run the solution.py file. If you see the bot moving with forward velocity, Voila! Your installation is complete.
 
-2. In test.py, you'll see a working loop. You'll have to write the code to control the robot within this working loop. 
+2. In solution.py, you'll see a working loop. You'll have to write the code to control the robot within this working loop. 
 
 3. There are several functions in [helper.py](https://github.com/Robotics-Club-IIT-BHU/FreshersEvent_PS1Arena/blob/main/gym-line-follower-env/gym_line_follower/helper.py) for you to navigate the arena. Their names and use cases are as follows: 
 
